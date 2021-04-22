@@ -1,0 +1,124 @@
+<html>
+<head>
+  <title>폼 태그 연습</title>
+</head>
+<body>
+  <h2>폼 태그 연습</h2>
+  <form name="myform">
+    <fieldset>
+      <legend>로그인 정보</legend>
+      <p><label for="mid">아이디</label> : <input type="text" name="mid" id="mid" placeholder="아이디를 입력하세요"/></p>
+      <p><label for="pwd">비밀번호 : <input type="password" name="pwd" id="pwd" placeholder="비밀번호를 입력하세요"/></p>
+    </fieldset>
+    <fieldset>
+      <legend>신상정보</legend>
+      <p><label for="name">성명 : <input type="text" name="name" id="name" placeholder="이름을 입력하세요"/></p>
+      <!-- <p>나이 : <input type="text" name="age" size="3" value="0" maxlength="3"/></p> -->
+      <p>나이 : <input type="number" name="age" min="10" max="150" step="1" size="3"/></p>
+      <p>생일 : <input type="date" name="birthday"/></p>
+    </fieldset>
+    <p>출근시간 : <input type="time" value="09:20" name="start" readonly/></p>
+    <p>퇴근시간 : <input type="time" name="end"/></p>
+    <p>성별 :
+      <input type="radio" name="gender" value="남자" checked>남자
+      <input type="radio" name="gender" value="여자">여자
+    </p>
+    <p>취미 :
+      <input type="checkbox" name="hobby" value="등산">등산
+      <input type="checkbox" name="hobby" value="낚시">낚시
+      <input type="checkbox" name="hobby" value="영화감상">영화감상
+      <input type="checkbox" name="hobby" value="싸이클">싸이클
+      <input type="checkbox" name="hobby" value="바둑">바둑
+      <input type="checkbox" name="hobby" value="독서">독서
+    </p>
+    <p>가보고 싶은산
+      <select name="mnt">
+        <option value="백두산">백두산</option>
+        <option value="한라산">한라산</option>
+        <option value="태백산">태백산</option>
+        <option value="금강산">금강산</option>
+        <option value="소백산">소백산</option>
+        <option value="북한산">북한산</option>
+      </select>
+    </p>
+    <p>좋아하는 음식
+      <select name="food" size="5" multiple>
+        <option value="짜장면">짜장면</option>
+        <option value="찐빵">찐빵</option>
+        <option value="초쿄렛">초쿄렛</option>
+        <option value="떡볶이">떡볶이</option>
+        <option value="라면">라면</option>
+        <option value="사과">사과</option>
+        <option value="아이스크림">아이스크림</option>
+        <option value="불고기">불고기</option>
+        <option value="햄버거">햄버거</option>
+        <option value="김밥">김밥</option>
+      </select>
+    </p>
+    <p>
+      자기소개 : <textarea rows="5" cols="50" name="content">자기소개를 입력하세요....</textarea>
+    </p>
+    <p>
+      첨부파일 : <input type="file" name="fname"/>
+    </p>
+    <p>
+      <label for="email">이메일</label> : <input type="email" name="email" id="email"/>
+    </p>
+    <p>
+      주문수량 : <input type="range" name="su" min="1" max="5" value="2"/>개
+    </p>
+    <p>
+      <label for="color">색상</label> : <input type="color" name="color" id="color"/>
+    </p>
+    <p>
+      <select name="class">
+        <optgroup label="공과대학">
+          <option>컴퓨터공학과</option>
+          <option>토목공학과</option>
+          <option>건축공학과</option>
+          <option>기계공학과</option>
+        </optgroup>
+        <optgroup label="인문대학">
+          <option>사학과</option>
+          <option>어문학과</option>
+          <option>철학과</option>
+        </optgroup>
+      </select>
+    </p>
+    <p>과목
+      <input type="text" name="kwamok" list="kwamok">
+      <datalist id="kwamok">
+        <option value="국어"></option>
+        <option value="국영어"></option>
+        <option value="수학"></option>
+        <option value="사회"></option>
+        <option value="국과학"></option>
+        <option value="체육"></option>
+      </datalist>
+    </p>
+    <p>
+      <label>진행중</label>
+      <progress></progress> /
+      <label>10초경과</label>
+      <progress value="10" max="100"></progress> /
+      <label>진행율 30%</label>
+      <progress value="30" max="100"></progress>
+    </p>
+    <p>
+      <label>사용량 30%</label>
+      <meter value="30" min="0" max="200"></meter> /
+      <label>사용량 130%</label>
+      <meter value="130" min="0" max="200" low="50" high="100"></meter>
+    </p>
+    <p>
+      <input type="submit" value="회원가입"/>
+      <input type="reset" value="취소"/>
+      <input type="button" value="체크"/>
+      <input type="image" src="../images/1.png" title="로그인"/>
+      <button type="submit">회원가입</button>
+      <button type="reset">취소</button>
+      <button type="button">회원가입</button>
+    </p>
+  </form>
+</body>
+</html>

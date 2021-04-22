@@ -1,0 +1,112 @@
+<html>
+<head>
+  <title>폼 태그 연습</title>
+</head>
+<body>
+  <form name="myform" method="get/post" action="전송할서버파일명">
+  <figure>
+    <figcaption>
+      <p align="right">표와 폼 연습</p>
+    </figcaption>
+    <table border="1" cellpadding="10" cellspacing="0" align="center">
+      <caption><font size="5"><mark>폼 태그</mark> 연습</font></caption>
+      <colgroup>
+        <col bgcolor="pink">
+        <col>
+      </colgroup>
+      <tr>
+        <td><label for="mid">아이디</label></td>
+        <td><input type="text" name="mid" id="mid" required autofocus placeholder="아이디를 입력하세요"/></td>
+      </tr>
+      <tr>
+        <td><label for="pwd">비밀번호</label></td>
+        <td><input type="password" name="pwd" id="pwd" required placeholder="비밀번호를 입력하세요"/></td>
+      </tr>
+      <tr>
+        <td><label for="name">성명</label></td>
+        <td><input type="text" name="name" id="name" required placeholder="이름을 입력하세요"/></td>
+      </tr>
+      <tr>
+        <td>나이</td>
+        <td><input type="number" name="age" min="10" max="150" step="1" size="3"/></td>
+      </tr>
+      <tr>
+        <td>생일</td>
+        <td><input type="date" name="birthday"/></td>
+      </tr>
+      <tr>
+        <td>출근시간</td>
+        <td><input type="time" value="09:20" name="start" readonly/></td>
+      </tr>
+      <tr>
+        <td>퇴근시간</td>
+        <td><input type="time" name="end"/></td>
+      </tr>
+      <tr>
+        <td>성별</td>
+        <td>
+          <input type="radio" name="gender" value="남자" checked>남자
+          <input type="radio" name="gender" value="여자">여자
+        </td>
+      </tr>
+      <tr>
+        <td>취미</td>
+        <td>
+          <input type="checkbox" name="hobby" value="등산">등산
+          <input type="checkbox" name="hobby" value="낚시">낚시
+          <input type="checkbox" name="hobby" value="영화감상">영화감상
+          <input type="checkbox" name="hobby" value="싸이클">싸이클
+          <input type="checkbox" name="hobby" value="바둑">바둑
+          <input type="checkbox" name="hobby" value="독서">독서
+        </td>
+      </tr>
+      <tr>
+        <td>가보고 싶은산</td>
+        <td>
+          <select name="mnt">
+            <option value="백두산">백두산</option>
+            <option value="한라산">한라산</option>
+            <option value="태백산">태백산</option>
+            <option value="금강산">금강산</option>
+            <option value="소백산">소백산</option>
+            <option value="북한산">북한산</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td>좋아하는 음식</td>
+        <td>
+          <select name="food" size="5" multiple>
+            <option value="짜장면">짜장면</option>
+            <option value="찐빵">찐빵</option>
+            <option value="초쿄렛">초쿄렛</option>
+            <option value="떡볶이">떡볶이</option>
+            <option value="라면">라면</option>
+            <option value="사과">사과</option>
+            <option value="아이스크림">아이스크림</option>
+            <option value="불고기">불고기</option>
+            <option value="햄버거">햄버거</option>
+            <option value="김밥">김밥</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td>자기소개</td>
+        <td><textarea rows="5" cols="50" name="content">자기소개를 입력하세요....</textarea></td>
+      </tr>
+      <tr>
+        <td>첨부파일</td>
+        <td><input type="file" name="fname"/></td>
+      </tr>
+      <tr>
+        <td colspan="2" bgcolor="skyblue" align="center">
+          <input type="submit" value="회원가입"/>
+          <input type="reset" value="취소"/>
+          <input type="button" value="체크"/>
+        </td>
+      </tr>
+    </table>
+  </figure>
+  </form>
+</body>
+</html>
