@@ -1,0 +1,81 @@
+<html>
+  <head>
+    <title>특강 신청</title>
+  </head>
+  <body>
+    <h2>여름방학 특강 신청</h2>
+    <fieldset>
+      <legend>수강 신청인</legend>
+      <table>
+        <tr>
+          <td>학번</td>
+          <td><input type="text" name="class" id="class" /></td>
+        </tr>
+        <tr>
+          <td>이름</td>
+          <td><input type="text" name="name" id="name" /></td>
+        </tr>
+        <tr>
+          <td>학과</td>
+          <td>
+            <select>
+              <option>컴퓨터공학과</option>
+              <option>토목공학과</option>
+              <option>건축공학과</option>
+              <option>기계공학과</option>
+            </select>
+          </td>
+        </tr>
+      </table>
+    </fieldset>
+    <fieldset>
+      <legend>수강 과목을 선택하세요</legend>
+      <table>
+        <tr>
+          <td>선호색상</td>
+          <td><input type="color"/></td>
+        </tr>
+        <tr>
+          <td>신청과목(자격)</td>
+          <td>
+            <input type="radio" value="영어회화(초급)" checked/> 영어회화(초급)
+            <input type="radio" value="영어회화(중급)"/> 영어회화(중급)
+            <input type="radio" value="영어회화(고급)"/> 영어회화(고급)
+          </td>
+        </tr>
+        <tr>
+          <td>신청과목(자격)</td>
+          <td>
+            <input type="radio" checked />TOEIC
+            <input type="radio"/>TOEFL
+            <input type="radio"/>OPIC
+          </td>
+        </tr>
+        <tr>
+          <td>관심분야</td>
+          <td>
+            <input type="checkbox" value="문법">문법
+            <input type="checkbox" value="Vocalburary">Vocalburary
+            <input type="checkbox" value="회화">회화
+            <input type="checkbox" value="리스닝">리스닝
+            <input type="checkbox" value="뉴스 청취">뉴스 청취
+            <input type="checkbox" value="독해">독해
+          </td>
+        </tr>
+      </table>
+    </fieldset>
+    <fieldset>
+      <legend>강의 시간을 선택하세요</legend>
+      <table>
+        <tr>
+          <td>개강 주</td>
+          <td><input type="week"></td>
+        </tr>
+        <tr>
+          <td>강의 시간</td>
+          <td><input type="time"></td>
+        </tr>
+      </table> 
+    </fieldset>
+  </body>
+</html>
